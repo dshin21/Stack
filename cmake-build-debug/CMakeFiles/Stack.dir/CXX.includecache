@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/googleDrive/DBOX/BCIT/COMP_3712/Labs/W4/Stack/Stack.cpp
+Stack.hpp
+D:/googleDrive/DBOX/BCIT/COMP_3712/Labs/W4/Stack/Stack.hpp
+
+D:/googleDrive/DBOX/BCIT/COMP_3712/Labs/W4/Stack/Stack.hpp
+array
+-
+iostream
+-
+

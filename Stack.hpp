@@ -5,24 +5,30 @@
 #ifndef STACK_STACK_HPP
 #define STACK_STACK_HPP
 
+#include <array>
+#include <iostream>
 
 class Stack {
 private:
     static constexpr auto MAX_SIZE = 10;
-    int stack[MAX_SIZE]{};
+    std::array< int, MAX_SIZE > *stack;
     int topOfStack;
 
-    bool push();
+    bool push( int data );
+
     void pop();
+
     int top() const;
+
     bool empty();
+
     bool full();
-    void print();
+
+
 
 public:
-    Stack():topOfStack{-1}{}
-
-
+    Stack();
+    void print();
 
 };
 
