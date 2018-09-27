@@ -4,30 +4,35 @@
 
 #include "Stack.hpp"
 
-Stack::Stack() : topOfStack{ -1 } {
+Stack::Stack() : topIndex{ -1 } {
     for ( int &i : *stack )
         i = -1;
 }
 
 bool Stack::push( int data ) {
-
+    for ( int &i : *stack )
+        if ( i == -1 ) {
+            i = data;
+            topIndex++;
+            return true;
+        }
     return false;
 }
 
 void Stack::pop() {
-
+    topIndex--;
 }
 
 int Stack::top() const {
-    return 0;
+    return stack->at( topIndex );
 }
 
 bool Stack::empty() {
-    return false;
+    return topIndex == -1;
 }
 
 bool Stack::full() {
-    return false;
+    return topIndex == MAX_SIZE -1;
 }
 
 void Stack::print() {

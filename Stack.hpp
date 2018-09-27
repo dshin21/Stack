@@ -12,7 +12,13 @@ class Stack {
 private:
     static constexpr auto MAX_SIZE = 10;
     std::array< int, MAX_SIZE > *stack;
-    int topOfStack;
+    int topIndex;
+
+
+public:
+    Stack();
+
+    void print();
 
     bool push( int data );
 
@@ -23,12 +29,6 @@ private:
     bool empty();
 
     bool full();
-
-
-
-public:
-    Stack();
-    void print();
 
 };
 
