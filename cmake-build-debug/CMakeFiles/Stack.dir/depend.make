@@ -4,7 +4,6 @@
 CMakeFiles/Stack.dir/Stack.cpp.obj: ../Stack.cpp
 CMakeFiles/Stack.dir/Stack.cpp.obj: ../Stack.hpp
 
-CMakeFiles/Stack.dir/main.cpp.obj: ../Stack.hpp
 CMakeFiles/Stack.dir/main.cpp.obj: ../main.cpp
 
 CMakeFiles/Stack.dir/unit_tess.cpp.obj: ../Stack.hpp

@@ -7,6 +7,8 @@
 
 #include <array>
 #include <iostream>
+#include <sstream>
+#include <string>
 
 class Stack {
 private:
@@ -14,7 +16,7 @@ private:
     static constexpr auto MAX_SIZE = 10;
 
     //an array of 10 element stack
-    std::array< int, MAX_SIZE > *stack;
+    int stack[10];
 
     //index of the top element
     int topIndex;
@@ -57,7 +59,7 @@ public:
     *@param - n/a
     *@return - void
     */
-    void print();
+    std::string print();
 };
 
 

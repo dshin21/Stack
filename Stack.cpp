@@ -4,24 +4,28 @@
 
 #include "Stack.hpp"
 
-Stack::Stack() : topIndex{ -1 } {}
+Stack::Stack() {
+    topIndex = -1;
+}
 
 bool Stack::push( int data ) {
-    if(topIndex < MAX_SIZE){
+    if ( topIndex < MAX_SIZE ) {
         topIndex++;
-        stack->at(topIndex) = data;
+        stack[ topIndex ] = data;
         return true;
     }
     return false;
 }
 
 void Stack::pop() {
-    stack->at(topIndex) = 0;
-    topIndex--;
+    if ( topIndex >= 0 ) {
+        stack[ topIndex ] = 0;
+        topIndex--;
+    }
 }
 
 int Stack::top() const {
-    return stack->at( topIndex );
+    return stack[ topIndex ];
 }
 
 bool Stack::empty() {
@@ -29,12 +33,14 @@ bool Stack::empty() {
 }
 
 bool Stack::full() {
-    return topIndex == MAX_SIZE -1;
+    return topIndex == MAX_SIZE - 1;
 }
 
-void Stack::print() {
-    for ( int i = 0; i < stack->size(); ++i )
-        std::cout << "Element at index: " << i << " is " << stack->at( i ) << std::endl;
+std::string Stack::print() {
+    std::ostringstream oss;
+    for ( int i = 0; i < MAX_SIZE; ++i )
+        oss << i << ":" << std::to_string( stack[ i ] ) << " ";
+    return oss.str();
 }
 
 

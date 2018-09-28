@@ -11,6 +11,10 @@ array
 -
 iostream
 -
+sstream
+-
+string
+-
 
 D:/googleDrive/DBOX/BCIT/COMP_3712/Labs/W4/Stack/catch.hpp
 TargetConditionals.h
@@ -445,6 +449,4 @@ catch.hpp
 D:/googleDrive/DBOX/BCIT/COMP_3712/Labs/W4/Stack/catch.hpp
 Stack.hpp
 D:/googleDrive/DBOX/BCIT/COMP_3712/Labs/W4/Stack/Stack.hpp
-array
--
 
