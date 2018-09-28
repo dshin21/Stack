@@ -7,3 +7,7 @@ CMakeFiles/Stack.dir/Stack.cpp.obj: ../Stack.hpp
 CMakeFiles/Stack.dir/main.cpp.obj: ../Stack.hpp
 CMakeFiles/Stack.dir/main.cpp.obj: ../main.cpp
 
+CMakeFiles/Stack.dir/unit_tess.cpp.obj: ../Stack.hpp
+CMakeFiles/Stack.dir/unit_tess.cpp.obj: ../catch.hpp
+CMakeFiles/Stack.dir/unit_tess.cpp.obj: ../unit_tess.cpp
+

@@ -176,6 +176,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\Stack.dir\build.make CMakeFiles/Stack.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+unit_tess.obj: unit_tess.cpp.obj
+
+.PHONY : unit_tess.obj
+
+# target to build an object file
+unit_tess.cpp.obj:
+	$(MAKE) -f CMakeFiles\Stack.dir\build.make CMakeFiles/Stack.dir/unit_tess.cpp.obj
+.PHONY : unit_tess.cpp.obj
+
+unit_tess.i: unit_tess.cpp.i
+
+.PHONY : unit_tess.i
+
+# target to preprocess a source file
+unit_tess.cpp.i:
+	$(MAKE) -f CMakeFiles\Stack.dir\build.make CMakeFiles/Stack.dir/unit_tess.cpp.i
+.PHONY : unit_tess.cpp.i
+
+unit_tess.s: unit_tess.cpp.s
+
+.PHONY : unit_tess.s
+
+# target to generate assembly for a file
+unit_tess.cpp.s:
+	$(MAKE) -f CMakeFiles\Stack.dir\build.make CMakeFiles/Stack.dir/unit_tess.cpp.s
+.PHONY : unit_tess.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -191,6 +218,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... unit_tess.obj
+	@echo ... unit_tess.i
+	@echo ... unit_tess.s
 .PHONY : help
 
 
