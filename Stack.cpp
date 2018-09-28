@@ -38,7 +38,7 @@ bool Stack::full() {
 
 std::string Stack::print() {
     std::ostringstream oss;
-    for ( int i = 0; i < MAX_SIZE; ++i )
+    for ( int i = 0; i <= topIndex; ++i )
         oss << i << ":" << std::to_string( stack[ i ] ) << " ";
     return oss.str();
 }

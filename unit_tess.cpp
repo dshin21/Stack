@@ -10,7 +10,6 @@
 TEST_CASE( "A new stack is empty" ) {
     Stack stack;
     REQUIRE( stack.empty());
-    REQUIRE( !stack.full());
 }
 
 TEST_CASE( "push(): pushing element when empty" ) {
@@ -23,13 +22,13 @@ TEST_CASE( "push(): pushing element when full" ) {
     Stack stack;
     stack.push( 1 );
     stack.push( 2 );
+    stack.push( 2 );
+    stack.push( 0 );
+    stack.push( 2 );
     stack.push( 3 );
+    stack.push( 0 );
     stack.push( 4 );
-    stack.push( 5 );
-    stack.push( 6 );
-    stack.push( 7 );
-    stack.push( 8 );
-    stack.push( 9 );
+    stack.push( 1 );
     stack.push( 0 );
 
     stack.push( 333 );
@@ -106,4 +105,10 @@ TEST_CASE( "print(): prints the stack" ) {
     stack.push( 10 );
 
     REQUIRE( stack.print() == "0:1 1:2 2:3 3:4 4:5 5:6 6:7 7:8 8:9 9:10 " );
+}
+
+TEST_CASE( "print(): prints the stack when empty" ) {
+    Stack stack;
+
+    REQUIRE( stack.print() == "" );
 }
